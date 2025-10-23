@@ -11,15 +11,18 @@ GitHub Actions падает с ошибкой конфликта версий Ru
 Использует совместимую версию Jekyll с GitHub Pages.
 
 **Файлы:**
+
 - `Gemfile.github-pages` - совместимые зависимости
 - Workflow использует Ruby 2.7
 
 **Преимущества:**
+
 - ✅ Полная совместимость с GitHub Pages
 - ✅ Все функции Jekyll работают
 - ✅ Стабильная версия
 
 **Недостатки:**
+
 - ❌ Старая версия Jekyll (3.9 вместо 4.3)
 
 ### Вариант 2: Статический деплой
@@ -27,15 +30,18 @@ GitHub Actions падает с ошибкой конфликта версий Ru
 Использует Python скрипт для конвертации Markdown в HTML.
 
 **Файлы:**
+
 - `deploy-www-static.yml` - статический workflow
 - `convert_md_to_html.py` - конвертер Markdown
 
 **Преимущества:**
+
 - ✅ Нет конфликтов зависимостей
 - ✅ Быстрая сборка
 - ✅ Простая настройка
 
 **Недостатки:**
+
 - ❌ Нет продвинутых функций Jekyll
 - ❌ Ручная конвертация Markdown
 
@@ -44,32 +50,38 @@ GitHub Actions падает с ошибкой конфликта версий Ru
 Использует только необходимые зависимости без GitHub Pages.
 
 **Файлы:**
+
 - `Gemfile.minimal` - минимальные зависимости
 - Текущий workflow
 
 **Преимущества:**
+
 - ✅ Современная версия Jekyll
 - ✅ Минимальные зависимости
 
 **Недостатки:**
+
 - ❌ Может не работать с GitHub Pages
 - ❌ Ограниченная функциональность
 
 ## Как выбрать вариант
 
 ### Для продакшена (рекомендуется)
+
 ```bash
 # Используйте Вариант 1 - Jekyll 3.9
 # Workflow автоматически использует Gemfile.github-pages
 ```
 
 ### Для быстрого деплоя
+
 ```bash
 # Используйте Вариант 2 - Статический
 # Переименуйте deploy-www-static.yml в deploy-www-to-github-pages.yml
 ```
 
 ### Для разработки
+
 ```bash
 # Используйте Вариант 3 - Минимальный
 # Для локальной разработки
@@ -78,12 +90,14 @@ GitHub Actions падает с ошибкой конфликта версий Ru
 ## Переключение между вариантами
 
 ### На Вариант 1 (Jekyll 3.9)
+
 ```bash
 # Workflow уже настроен на использование Gemfile.github-pages
 # Ничего дополнительно делать не нужно
 ```
 
 ### На Вариант 2 (Статический)
+
 ```bash
 # Переименуйте файлы
 mv .github/workflows/deploy-www-to-github-pages.yml .github/workflows/deploy-www-to-github-pages.yml.backup
@@ -91,6 +105,7 @@ mv .github/workflows/deploy-www-static.yml .github/workflows/deploy-www-to-githu
 ```
 
 ### На Вариант 3 (Минимальный)
+
 ```bash
 # Измените workflow
 # Замените cp Gemfile.github-pages Gemfile на cp Gemfile.minimal Gemfile
@@ -99,6 +114,7 @@ mv .github/workflows/deploy-www-static.yml .github/workflows/deploy-www-to-githu
 ## Тестирование
 
 ### Локальное тестирование
+
 ```bash
 cd www
 
@@ -117,6 +133,7 @@ bundle exec jekyll build
 ```
 
 ### Тестирование в GitHub Actions
+
 1. Сделайте тестовый коммит
 2. Проверьте логи в Actions
 3. Убедитесь, что деплой прошел успешно
@@ -124,29 +141,35 @@ bundle exec jekyll build
 ## Рекомендации
 
 ### Для большинства случаев
+
 **Используйте Вариант 1** - он обеспечивает стабильную работу с GitHub Pages.
 
 ### Для простых сайтов
+
 **Используйте Вариант 2** - быстрый и надежный статический деплой.
 
 ### Для экспериментов
+
 **Используйте Вариант 3** - минимальные зависимости для тестирования.
 
 ## Отладка
 
 ### Проверка зависимостей
+
 ```bash
 bundle check
 bundle outdated
 ```
 
 ### Очистка кэша
+
 ```bash
 bundle clean --force
 rm -rf vendor/bundle
 ```
 
 ### Проверка версий
+
 ```bash
 ruby -v
 bundle -v

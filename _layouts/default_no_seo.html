@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'ru' }}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}
+    </title>
+    <meta name="description"
+        content="{{ page.description | default: site.description }}">
+
+    <!-- Basic SEO meta tags -->
+    <meta name="author"
+        content="{{ site.author | default: 'Flutter Developer' }}">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+
+    <!-- Open Graph meta tags -->
+    <meta property="og:title"
+        content="{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}">
+    <meta property="og:description"
+        content="{{ page.description | default: site.description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+
+    <!-- Twitter Card meta tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title"
+        content="{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}">
+    <meta name="twitter:description"
+        content="{{ page.description | default: site.description }}">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ '/assets/css/themes.css' | relative_url }}">
+</head>
+
+<body>
+    <div class="container">
+        {% unless page.hide_header %}
+        <div class="header">
+            <h1>🚀 {{ site.title }}</h1>
+            <p>{{ site.description }}</p>
+        </div>
+        {% endunless %}
+
+        <div class="content">
+            {% if page.back_link %}
+            <a href="{{ page.back_link }}" class="back-link">← Назад к
+                главной</a>
+            {% endif %}
+
+            {{ content }}
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="{{ '/assets/js/theme-switcher.js' | relative_url }}"></script>
+</body>
+
+</html>
