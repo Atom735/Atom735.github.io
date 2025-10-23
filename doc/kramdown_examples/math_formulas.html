@@ -1,296 +1,87 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Математические формулы в Kramdown - Flutter Marketplace App - Документация
-    </title>
-    <meta name="description"
-        content="Полная документация по разработке маркетплейс приложения на Flutter">
-
-    <!-- Jekyll SEO -->
-    <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Математические формулы в Kramdown | Flutter Marketplace App - Документация</title>
-<meta name="generator" content="Jekyll v4.3.4" />
-<meta property="og:title" content="Математические формулы в Kramdown" />
-<meta name="author" content="Flutter Developer" />
-<meta property="og:locale" content="ru" />
-<meta name="description" content="Полная документация по разработке маркетплейс приложения на Flutter" />
-<meta property="og:description" content="Полная документация по разработке маркетплейс приложения на Flutter" />
-<link rel="canonical" href="/doc/kramdown_examples/math_formulas.html" />
-<meta property="og:url" content="/doc/kramdown_examples/math_formulas.html" />
-<meta property="og:site_name" content="Flutter Marketplace App - Документация" />
-<meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Математические формулы в Kramdown" />
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Flutter Developer"},"description":"Полная документация по разработке маркетплейс приложения на Flutter","headline":"Математические формулы в Kramdown","url":"/doc/kramdown_examples/math_formulas.html"}</script>
-<!-- End Jekyll SEO tag -->
-
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="/assets/css/themes.css">
+    <title>Math Formulas</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f8f9fa;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3, h4 {
+            color: #667eea;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        h1 {
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul, ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        li {
+            margin: 5px 0;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #666;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .back-link:hover {
+            color: #667eea;
+        }
+    </style>
 </head>
-
 <body>
     <div class="container">
-        
-        <div class="header">
-            <h1>🚀 Flutter Marketplace App - Документация</h1>
-            <p>Полная документация по разработке маркетплейс приложения на Flutter</p>
-        </div>
-        
-
-        <div class="content">
-            
-            <a href="/" class="back-link">← Назад к
-                главной</a>
-            
-
-            <h1 id="математические-формулы-в-kramdown">Математические формулы в Kramdown</h1>
-
-<p>Kramdown поддерживает математические формулы в формате LaTeX с помощью MathJax.</p>
-
-<h2 id="inline-формулы">Inline формулы</h2>
-
-<p>Встроенные формулы: $E = mc^2$, $a^2 + b^2 = c^2$, $x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}$</p>
-
-<h2 id="блочные-формулы">Блочные формулы</h2>
-
-<h3 id="основные-формулы">Основные формулы</h3>
-
-\[E = mc^2\]
-
-\[a^2 + b^2 = c^2\]
-
-\[x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}\]
-
-<h3 id="интегралы">Интегралы</h3>
-
-\[\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}\]
-
-\[\int_0^1 x^n dx = \frac{1}{n+1}\]
-
-\[\int \frac{1}{x} dx = \ln|x| + C\]
-
-<h3 id="производные">Производные</h3>
-
-\[\frac{d}{dx}(x^n) = nx^{n-1}\]
-
-\[\frac{d}{dx}(e^x) = e^x\]
-
-\[\frac{d}{dx}(\ln x) = \frac{1}{x}\]
-
-<h3 id="матрицы">Матрицы</h3>
-
-\[\begin{pmatrix}
-a &amp; b \\
-c &amp; d
-\end{pmatrix}\]
-
-\[\begin{bmatrix}
-1 &amp; 2 &amp; 3 \\
-4 &amp; 5 &amp; 6 \\
-7 &amp; 8 &amp; 9
-\end{bmatrix}\]
-
-\[\begin{vmatrix}
-a &amp; b \\
-c &amp; d
-\end{vmatrix} = ad - bc\]
-
-<h3 id="системы-уравнений">Системы уравнений</h3>
-
-\[\begin{cases}
+        <a href="../index.html" class="back-link">← Назад к главной</a>
+        <p>---
+layout: default
+title: Математические формулы в Kramdown
+back_link: /
+---</p><p><h1>Математические формулы в Kramdown</h1></p><p>Kramdown поддерживает математические формулы в формате LaTeX с помощью MathJax.</p><p><h2>Inline формулы</h2></p><p>Встроенные формулы: $E = mc^2$, $a^2 + b^2 = c^2$, $x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}$</p><p><h2>Блочные формулы</h2></p><p><h3>Основные формулы</h3></p><p>$$E = mc^2$$</p><p>$$a^2 + b^2 = c^2$$</p><p>$$x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}$$</p><p><h3>Интегралы</h3></p><p>$$\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}$$</p><p>$$\int_0^1 x^n dx = \frac{1}{n+1}$$</p><p>$$\int \frac{1}{x} dx = \ln|x| + C$$</p><p><h3>Производные</h3></p><p>$$\frac{d}{dx}(x^n) = nx^{n-1}$$</p><p>$$\frac{d}{dx}(e^x) = e^x$$</p><p>$$\frac{d}{dx}(\ln x) = \frac{1}{x}$$</p><p><h3>Матрицы</h3></p><p>$$\begin{pmatrix}
+a & b \\
+c & d
+\end{pmatrix}$$</p><p>$$\begin{bmatrix}
+1 & 2 & 3 \\
+4 & 5 & 6 \\
+7 & 8 & 9
+\end{bmatrix}$$</p><p>$$\begin{vmatrix}
+a & b \\
+c & d
+\end{vmatrix} = ad - bc$$</p><p><h3>Системы уравнений</h3></p><p>$$\begin{cases}
 x + y = 10 \\
 2x - y = 5
-\end{cases}\]
-
-\[\begin{align}
-x + y &amp;= 10 \\
-2x - y &amp;= 5 \\
-3x &amp;= 15 \\
-x &amp;= 5
-\end{align}\]
-
-<h3 id="суммы-и-произведения">Суммы и произведения</h3>
-
-\[\sum_{i=1}^{n} i = \frac{n(n+1)}{2}\]
-
-\[\sum_{i=0}^{\infty} \frac{x^i}{i!} = e^x\]
-
-\[\prod_{i=1}^{n} i = n!\]
-
-<h3 id="пределы">Пределы</h3>
-
-\[\lim_{x \to 0} \frac{\sin x}{x} = 1\]
-
-\[\lim_{n \to \infty} \left(1 + \frac{1}{n}\right)^n = e\]
-
-\[\lim_{x \to \infty} \frac{\ln x}{x} = 0\]
-
-<h3 id="тригонометрические-функции">Тригонометрические функции</h3>
-
-\[\sin^2 x + \cos^2 x = 1\]
-
-\[\sin(a + b) = \sin a \cos b + \cos a \sin b\]
-
-\[\cos(a + b) = \cos a \cos b - \sin a \sin b\]
-
-<h3 id="логарифмы">Логарифмы</h3>
-
-\[\log_a(xy) = \log_a x + \log_a y\]
-
-\[\log_a\left(\frac{x}{y}\right) = \log_a x - \log_a y\]
-
-\[\log_a(x^n) = n \log_a x\]
-
-<h3 id="комплексные-числа">Комплексные числа</h3>
-
-\[i^2 = -1\]
-
-\[e^{i\pi} + 1 = 0\]
-
-\[z = r(\cos \theta + i \sin \theta) = re^{i\theta}\]
-
-<h3 id="статистика-и-вероятность">Статистика и вероятность</h3>
-
-\[P(A \cup B) = P(A) + P(B) - P(A \cap B)\]
-
-\[E[X] = \sum_{i} x_i P(x_i)\]
-
-\[\sigma^2 = E[(X - \mu)^2] = E[X^2] - (E[X])^2\]
-
-<h3 id="физические-формулы">Физические формулы</h3>
-
-<h4 id="механика">Механика</h4>
-
-\[F = ma\]
-
-\[E_k = \frac{1}{2}mv^2\]
-
-\[E_p = mgh\]
-
-\[p = mv\]
-
-<h4 id="термодинамика">Термодинамика</h4>
-
-\[PV = nRT\]
-
-\[Q = mc\Delta T\]
-
-\[\Delta S = \frac{Q}{T}\]
-
-<h4 id="электродинамика">Электродинамика</h4>
-
-\[F = qE\]
-
-\[F = qvB \sin \theta\]
-
-\[E = \frac{1}{2}CV^2\]
-
-<h3 id="геометрические-формулы">Геометрические формулы</h3>
-
-<h4 id="площади">Площади</h4>
-
-\[S_{\text{круга}} = \pi r^2\]
-
-\[S_{\text{треугольника}} = \frac{1}{2}ab \sin C\]
-
-\[S_{\text{прямоугольника}} = ab\]
-
-<h4 id="объемы">Объемы</h4>
-
-\[V_{\text{шара}} = \frac{4}{3}\pi r^3\]
-
-\[V_{\text{цилиндра}} = \pi r^2 h\]
-
-\[V_{\text{конуса}} = \frac{1}{3}\pi r^2 h\]
-
-<h3 id="алгоритмы-и-сложность">Алгоритмы и сложность</h3>
-
-\[O(1) &lt; O(\log n) &lt; O(n) &lt; O(n \log n) &lt; O(n^2) &lt; O(2^n)\]
-
-\[T(n) = T(n/2) + O(1) = O(\log n)\]
-
-\[T(n) = 2T(n/2) + O(n) = O(n \log n)\]
-
-<h3 id="теория-чисел">Теория чисел</h3>
-
-\[a \equiv b \pmod{m}\]
-
-\[a^{p-1} \equiv 1 \pmod{p} \quad \text{(теорема Ферма)}\]
-
-\[\gcd(a, b) = \gcd(b, a \bmod b)\]
-
-<h3 id="ряды-и-последовательности">Ряды и последовательности</h3>
-
-<h4 id="арифметическая-прогрессия">Арифметическая прогрессия</h4>
-
-\[a_n = a_1 + (n-1)d\]
-
-\[S_n = \frac{n(a_1 + a_n)}{2}\]
-
-<h4 id="геометрическая-прогрессия">Геометрическая прогрессия</h4>
-
-\[a_n = a_1 \cdot r^{n-1}\]
-
-\[S_n = a_1 \cdot \frac{1 - r^n}{1 - r}\]
-
-<h4 id="числа-фибоначчи">Числа Фибоначчи</h4>
-
-\[F_n = F_{n-1} + F_{n-2}\]
-
-\[F_n = \frac{\phi^n - \psi^n}{\sqrt{5}}\]
-
-<p>где $\phi = \frac{1 + \sqrt{5}}{2}$ и $\psi = \frac{1 - \sqrt{5}}{2}$</p>
-
-<h3 id="дифференциальные-уравнения">Дифференциальные уравнения</h3>
-
-\[\frac{dy}{dx} = ky\]
-
-\[y = Ce^{kx}\]
-
-\[\frac{d^2y}{dx^2} + \omega^2 y = 0\]
-
-\[y = A \cos(\omega x) + B \sin(\omega x)\]
-
-<h3 id="интегральные-преобразования">Интегральные преобразования</h3>
-
-<h4 id="преобразование-фурье">Преобразование Фурье</h4>
-
-\[\mathcal{F}\{f(t)\} = F(\omega) = \int_{-\infty}^{\infty} f(t) e^{-i\omega t} dt\]
-
-<h4 id="преобразование-лапласа">Преобразование Лапласа</h4>
-
-\[\mathcal{L}\{f(t)\} = F(s) = \int_0^{\infty} f(t) e^{-st} dt\]
-
-<h3 id="теория-графов">Теория графов</h3>
-
-\[|V| - |E| + |F| = 2 \quad \text{(формула Эйлера)}\]
-
-\[\sum_{v \in V} \deg(v) = 2|E|\]
-
-<h3 id="линейная-алгебра">Линейная алгебра</h3>
-
-\[\det(A) = \sum_{\sigma \in S_n} \text{sgn}(\sigma) \prod_{i=1}^n a_{i,\sigma(i)}\]
-
-\[A^{-1} = \frac{1}{\det(A)} \text{adj}(A)\]
-
-<h3 id="комбинаторика">Комбинаторика</h3>
-
-\[C(n,k) = \binom{n}{k} = \frac{n!}{k!(n-k)!}\]
-
-\[P(n,k) = \frac{n!}{(n-k)!}\]
-
-\[n! = \prod_{k=1}^n k = n \cdot (n-1) \cdot \ldots \cdot 1\]
-
-        </div>
+\end{cases}$$</p><p>$$\begin{align}
+x + y &= 10 \\
+2x - y &= 5 \\
+3x &= 15 \\
+x &= 5
+\end{align}$$</p><p><h3>Суммы и произведения</h3></p><p>$$\sum_{i=1}^{n} i = \frac{n(n+1)}{2}$$</p><p>$$\sum_{i=0}^{\infty} \frac{x^i}{i!} = e^x$$</p><p>$$\prod_{i=1}^{n} i = n!$$</p><p><h3>Пределы</h3></p><p>$$\lim_{x \to 0} \frac{\sin x}{x} = 1$$</p><p>$$\lim_{n \to \infty} \left(1 + \frac{1}{n}\right)^n = e$$</p><p>$$\lim_{x \to \infty} \frac{\ln x}{x} = 0$$</p><p><h3>Тригонометрические функции</h3></p><p>$$\sin^2 x + \cos^2 x = 1$$</p><p>$$\sin(a + b) = \sin a \cos b + \cos a \sin b$$</p><p>$$\cos(a + b) = \cos a \cos b - \sin a \sin b$$</p><p><h3>Логарифмы</h3></p><p>$$\log_a(xy) = \log_a x + \log_a y$$</p><p>$$\log_a\left(\frac{x}{y}\right) = \log_a x - \log_a y$$</p><p>$$\log_a(x^n) = n \log_a x$$</p><p><h3>Комплексные числа</h3></p><p>$$i^2 = -1$$</p><p>$$e^{i\pi} + 1 = 0$$</p><p>$$z = r(\cos \theta + i \sin \theta) = re^{i\theta}$$</p><p><h3>Статистика и вероятность</h3></p><p>$$P(A \cup B) = P(A) + P(B) - P(A \cap B)$$</p><p>$$E[X] = \sum_{i} x_i P(x_i)$$</p><p>$$\sigma^2 = E[(X - \mu)^2] = E[X^2] - (E[X])^2$$</p><p><h3>Физические формулы</h3></p><p><h4>Механика</h4></p><p>$$F = ma$$</p><p>$$E_k = \frac{1}{2}mv^2$$</p><p>$$E_p = mgh$$</p><p>$$p = mv$$</p><p><h4>Термодинамика</h4></p><p>$$PV = nRT$$</p><p>$$Q = mc\Delta T$$</p><p>$$\Delta S = \frac{Q}{T}$$</p><p><h4>Электродинамика</h4></p><p>$$F = qE$$</p><p>$$F = qvB \sin \theta$$</p><p>$$E = \frac{1}{2}CV^2$$</p><p><h3>Геометрические формулы</h3></p><p><h4>Площади</h4></p><p>$$S_{\text{круга}} = \pi r^2$$</p><p>$$S_{\text{треугольника}} = \frac{1}{2}ab \sin C$$</p><p>$$S_{\text{прямоугольника}} = ab$$</p><p><h4>Объемы</h4></p><p>$$V_{\text{шара}} = \frac{4}{3}\pi r^3$$</p><p>$$V_{\text{цилиндра}} = \pi r^2 h$$</p><p>$$V_{\text{конуса}} = \frac{1}{3}\pi r^2 h$$</p><p><h3>Алгоритмы и сложность</h3></p><p>$$O(1) < O(\log n) < O(n) < O(n \log n) < O(n^2) < O(2^n)$$</p><p>$$T(n) = T(n/2) + O(1) = O(\log n)$$</p><p>$$T(n) = 2T(n/2) + O(n) = O(n \log n)$$</p><p><h3>Теория чисел</h3></p><p>$$a \equiv b \pmod{m}$$</p><p>$$a^{p-1} \equiv 1 \pmod{p} \quad \text{(теорема Ферма)}$$</p><p>$$\gcd(a, b) = \gcd(b, a \bmod b)$$</p><p><h3>Ряды и последовательности</h3></p><p><h4>Арифметическая прогрессия</h4></p><p>$$a_n = a_1 + (n-1)d$$</p><p>$$S_n = \frac{n(a_1 + a_n)}{2}$$</p><p><h4>Геометрическая прогрессия</h4></p><p>$$a_n = a_1 \cdot r^{n-1}$$</p><p>$$S_n = a_1 \cdot \frac{1 - r^n}{1 - r}$$</p><p><h4>Числа Фибоначчи</h4></p><p>$$F_n = F_{n-1} + F_{n-2}$$</p><p>$$F_n = \frac{\phi^n - \psi^n}{\sqrt{5}}$$</p><p>где $\phi = \frac{1 + \sqrt{5}}{2}$ и $\psi = \frac{1 - \sqrt{5}}{2}$</p><p><h3>Дифференциальные уравнения</h3></p><p>$$\frac{dy}{dx} = ky$$</p><p>$$y = Ce^{kx}$$</p><p>$$\frac{d^2y}{dx^2} + \omega^2 y = 0$$</p><p>$$y = A \cos(\omega x) + B \sin(\omega x)$$</p><p><h3>Интегральные преобразования</h3></p><p><h4>Преобразование Фурье</h4></p><p>$$\mathcal{F}\{f(t)\} = F(\omega) = \int_{-\infty}^{\infty} f(t) e^{-i\omega t} dt$$</p><p><h4>Преобразование Лапласа</h4></p><p>$$\mathcal{L}\{f(t)\} = F(s) = \int_0^{\infty} f(t) e^{-st} dt$$</p><p><h3>Теория графов</h3></p><p>$$|V| - |E| + |F| = 2 \quad \text{(формула Эйлера)}$$</p><p>$$\sum_{v \in V} \deg(v) = 2|E|$$</p><p><h3>Линейная алгебра</h3></p><p>$$\det(A) = \sum_{\sigma \in S_n} \text{sgn}(\sigma) \prod_{i=1}^n a_{i,\sigma(i)}$$</p><p>$$A^{-1} = \frac{1}{\det(A)} \text{adj}(A)$$</p><p><h3>Комбинаторика</h3></p><p>$$C(n,k) = \binom{n}{k} = \frac{n!}{k!(n-k)!}$$</p><p>$$P(n,k) = \frac{n!}{(n-k)!}$$</p><p>$$n! = \prod_{k=1}^n k = n \cdot (n-1) \cdot \ldots \cdot 1$$
+</p>
     </div>
-
-    <!-- JavaScript -->
-    <script src="/assets/js/theme-switcher.js"></script>
 </body>
-
 </html>
