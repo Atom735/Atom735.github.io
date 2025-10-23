@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблицы в Kramdown - Flutter Marketplace App - Документация
+    </title>
+    <meta name="description"
+        content="Полная документация по разработке маркетплейс приложения на Flutter">
+
+    <!-- Jekyll SEO -->
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Таблицы в Kramdown | Flutter Marketplace App - Документация</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="Таблицы в Kramdown" />
+<meta name="author" content="Flutter Developer" />
+<meta property="og:locale" content="ru" />
+<meta name="description" content="Полная документация по разработке маркетплейс приложения на Flutter" />
+<meta property="og:description" content="Полная документация по разработке маркетплейс приложения на Flutter" />
+<link rel="canonical" href="/doc/kramdown_examples/tables.html" />
+<meta property="og:url" content="/doc/kramdown_examples/tables.html" />
+<meta property="og:site_name" content="Flutter Marketplace App - Документация" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Таблицы в Kramdown" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Flutter Developer"},"description":"Полная документация по разработке маркетплейс приложения на Flutter","headline":"Таблицы в Kramdown","url":"/doc/kramdown_examples/tables.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/themes.css">
+</head>
+
+<body>
+    <div class="container">
+        
+        <div class="header">
+            <h1>🚀 Flutter Marketplace App - Документация</h1>
+            <p>Полная документация по разработке маркетплейс приложения на Flutter</p>
+        </div>
+        
+
+        <div class="content">
+            
+            <a href="/index.html" class="back-link">← Назад к
+                главной</a>
+            
+
+            <h1 id="таблицы-в-kramdown">Таблицы в Kramdown</h1>
+
+<h2 id="простая-таблица">Простая таблица</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Название</th>
+      <th>Цена</th>
+      <th>Количество</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Яблоки</td>
+      <td>100₽</td>
+      <td>5 кг</td>
+    </tr>
+    <tr>
+      <td>Бананы</td>
+      <td>80₽</td>
+      <td>3 кг</td>
+    </tr>
+    <tr>
+      <td>Апельсины</td>
+      <td>120₽</td>
+      <td>2 кг</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="таблица-с-выравниванием">Таблица с выравниванием</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Колонка 1</th>
+      <th>Колонка 2</th>
+      <th>Колонка 3</th>
+      <th>Колонка 4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Обычный</td>
+      <td>^ Центр</td>
+      <td>&gt; Право</td>
+      <td>&lt; Лево</td>
+    </tr>
+    <tr>
+      <td>Текст</td>
+      <td>^ Центр</td>
+      <td>&gt; Право</td>
+      <td>&lt; Лево</td>
+    </tr>
+    <tr>
+      <td>Данные</td>
+      <td>^ Центр</td>
+      <td>&gt; Право</td>
+      <td>&lt; Лево</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="таблица-с-атрибутами">Таблица с атрибутами</h2>
+
+<table class="table-striped">
+  <thead>
+    <tr>
+      <th>Функция</th>
+      <th>Статус</th>
+      <th>Описание</th>
+      <th>Приоритет</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Таблицы</td>
+      <td>✅</td>
+      <td>Поддерживаются</td>
+      <td>Высокий</td>
+    </tr>
+    <tr>
+      <td>Код</td>
+      <td>✅</td>
+      <td>С подсветкой</td>
+      <td>Высокий</td>
+    </tr>
+    <tr>
+      <td>Математика</td>
+      <td>✅</td>
+      <td>LaTeX формулы</td>
+      <td>Средний</td>
+    </tr>
+    <tr>
+      <td>Сноски</td>
+      <td>✅</td>
+      <td>Автоматическая нумерация</td>
+      <td>Низкий</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="таблица-с-длинным-содержимым">Таблица с длинным содержимым</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Компонент</th>
+      <th>Описание</th>
+      <th>Использование</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Button</strong></td>
+      <td>Основная кнопка для действий пользователя</td>
+      <td>Используется для подтверждения действий, отправки форм, навигации</td>
+    </tr>
+    <tr>
+      <td><strong>Input</strong></td>
+      <td>Поле ввода текста</td>
+      <td>Для ввода данных пользователем, поиска, фильтрации</td>
+    </tr>
+    <tr>
+      <td><strong>Card</strong></td>
+      <td>Контейнер для группировки контента</td>
+      <td>Отображение товаров, статей, профилей пользователей</td>
+    </tr>
+    <tr>
+      <td><strong>Modal</strong></td>
+      <td>Всплывающее окно</td>
+      <td>Показ дополнительной информации, подтверждение действий</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="таблица-с-html">Таблица с HTML</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Элемент</th>
+      <th>HTML</th>
+      <th>Результат</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Жирный</td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;strong&gt;текст&lt;/strong&gt;</code></td>
+      <td><strong>текст</strong></td>
+    </tr>
+    <tr>
+      <td>Курсив</td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;em&gt;текст&lt;/em&gt;</code></td>
+      <td><em>текст</em></td>
+    </tr>
+    <tr>
+      <td>Ссылка</td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;a href="#"&gt;текст&lt;/a&gt;</code></td>
+      <td><a href="#">текст</a></td>
+    </tr>
+    <tr>
+      <td>Код</td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;code&gt;код&lt;/code&gt;</code></td>
+      <td><code class="language-plaintext highlighter-rouge">код</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="таблица-с-формулами">Таблица с формулами</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Формула</th>
+      <th>Описание</th>
+      <th>Результат</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">E = mc²</code></td>
+      <td>Энергия массы</td>
+      <td>\(E = mc^2\)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">a² + b² = c²</code></td>
+      <td>Теорема Пифагора</td>
+      <td>\(a^2 + b^2 = c^2\)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">x = (-b ± √(b²-4ac)) / 2a</code></td>
+      <td>Квадратное уравнение</td>
+      <td>\(x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}\)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="таблица-с-эмодзи">Таблица с эмодзи</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Статус</th>
+      <th>Эмодзи</th>
+      <th>Описание</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Успех</td>
+      <td>✅</td>
+      <td>Операция выполнена успешно</td>
+    </tr>
+    <tr>
+      <td>Ошибка</td>
+      <td>❌</td>
+      <td>Произошла ошибка</td>
+    </tr>
+    <tr>
+      <td>Предупреждение</td>
+      <td>⚠️</td>
+      <td>Требуется внимание</td>
+    </tr>
+    <tr>
+      <td>Информация</td>
+      <td>ℹ️</td>
+      <td>Дополнительная информация</td>
+    </tr>
+    <tr>
+      <td>Вопрос</td>
+      <td>❓</td>
+      <td>Требуется подтверждение</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="таблица-с-цветами">Таблица с цветами</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Цвет</th>
+      <th>HEX</th>
+      <th>RGB</th>
+      <th>Использование</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span style="color: #667eea;">Синий</span></td>
+      <td>#667eea</td>
+      <td>rgb(102, 126, 234)</td>
+      <td>Основной цвет</td>
+    </tr>
+    <tr>
+      <td><span style="color: #764ba2;">Фиолетовый</span></td>
+      <td>#764ba2</td>
+      <td>rgb(118, 75, 162)</td>
+      <td>Вторичный цвет</td>
+    </tr>
+    <tr>
+      <td><span style="color: #28a745;">Зеленый</span></td>
+      <td>#28a745</td>
+      <td>rgb(40, 167, 69)</td>
+      <td>Успех</td>
+    </tr>
+    <tr>
+      <td><span style="color: #dc3545;">Красный</span></td>
+      <td>#dc3545</td>
+      <td>rgb(220, 53, 69)</td>
+      <td>Ошибка</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="таблица-с-прогрессом">Таблица с прогрессом</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Задача</th>
+      <th>Прогресс</th>
+      <th>Статус</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Настройка Kramdown</td>
+      <td>100%</td>
+      <td>✅ Завершено</td>
+    </tr>
+    <tr>
+      <td>Создание примеров</td>
+      <td>90%</td>
+      <td>🔄 В процессе</td>
+    </tr>
+    <tr>
+      <td>Тестирование</td>
+      <td>0%</td>
+      <td>⏳ Планируется</td>
+    </tr>
+    <tr>
+      <td>Документация</td>
+      <td>75%</td>
+      <td>🔄 В процессе</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="таблица-с-ссылками">Таблица с ссылками</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Название</th>
+      <th>Ссылка</th>
+      <th>Описание</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Kramdown</td>
+      <td><a href="https://kramdown.gettalong.org/">kramdown.gettalong.org</a></td>
+      <td>Официальная документация</td>
+    </tr>
+    <tr>
+      <td>Jekyll</td>
+      <td><a href="https://jekyllrb.com/">jekyllrb.com</a></td>
+      <td>Генератор статических сайтов</td>
+    </tr>
+    <tr>
+      <td>GitHub Pages</td>
+      <td><a href="https://pages.github.com/">pages.github.com</a></td>
+      <td>Хостинг для Jekyll</td>
+    </tr>
+    <tr>
+      <td>Markdown</td>
+      <td><a href="https://daringfireball.net/projects/markdown/">daringfireball.net</a></td>
+      <td>Оригинальный Markdown</td>
+    </tr>
+  </tbody>
+</table>
+
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="/assets/js/theme-switcher.js"></script>
+</body>
+
+</html>

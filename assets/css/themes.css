@@ -1,0 +1,521 @@
+/* ========================================
+   Kramdown Examples - CSS Themes
+   ======================================== */
+
+/* CSS переменные для тем */
+:root {
+  /* Светлая тема (по умолчанию) */
+  --bg-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --bg-secondary: #ffffff;
+  --bg-tertiary: #f8f9fa;
+  --text-primary: #333333;
+  --text-secondary: #666666;
+  --text-muted: #999999;
+  --accent-color: #667eea;
+  --accent-secondary: #764ba2;
+  --border-color: #e9ecef;
+  --shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  --shadow-small: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --code-bg: #f1f3f4;
+  --table-stripe: #f8f9fa;
+  --link-color: #667eea;
+  --link-hover: #5a6fd8;
+  --quote-border: #667eea;
+  --quote-bg: #f8f9fa;
+}
+
+/* Темная тема */
+[data-theme="dark"] {
+  --bg-primary: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  --bg-secondary: #2d3748;
+  --bg-tertiary: #4a5568;
+  --text-primary: #e2e8f0;
+  --text-secondary: #a0aec0;
+  --text-muted: #718096;
+  --accent-color: #81c784;
+  --accent-secondary: #64b5f6;
+  --border-color: #4a5568;
+  --shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  --shadow-small: 0 4px 6px rgba(0, 0, 0, 0.3);
+  --code-bg: #2d3748;
+  --table-stripe: #4a5568;
+  --link-color: #81c784;
+  --link-hover: #66bb6a;
+  --quote-border: #81c784;
+  --quote-bg: #4a5568;
+}
+
+/* Системная тема (автоматическое определение) */
+@media (prefers-color-scheme: dark) {
+  [data-theme="system"] {
+    --bg-primary: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    --bg-secondary: #2d3748;
+    --bg-tertiary: #4a5568;
+    --text-primary: #e2e8f0;
+    --text-secondary: #a0aec0;
+    --text-muted: #718096;
+    --accent-color: #81c784;
+    --accent-secondary: #64b5f6;
+    --border-color: #4a5568;
+    --shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    --shadow-small: 0 4px 6px rgba(0, 0, 0, 0.3);
+    --code-bg: #2d3748;
+    --table-stripe: #4a5568;
+    --link-color: #81c784;
+    --link-hover: #66bb6a;
+    --quote-border: #81c784;
+    --quote-bg: #4a5568;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  [data-theme="system"] {
+    --bg-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --bg-secondary: #ffffff;
+    --bg-tertiary: #f8f9fa;
+    --text-primary: #333333;
+    --text-secondary: #666666;
+    --text-muted: #999999;
+    --accent-color: #667eea;
+    --accent-secondary: #764ba2;
+    --border-color: #e9ecef;
+    --shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    --shadow-small: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --code-bg: #f1f3f4;
+    --table-stripe: #f8f9fa;
+    --link-color: #667eea;
+    --link-hover: #5a6fd8;
+    --quote-border: #667eea;
+    --quote-bg: #f8f9fa;
+  }
+}
+
+/* ========================================
+   Базовые стили
+   ======================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  color: var(--text-primary);
+  background: var(--bg-primary);
+  min-height: 100vh;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ========================================
+   Заголовок
+   ======================================== */
+
+.header {
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* ========================================
+   Контент
+   ======================================== */
+
+.content {
+  background: var(--bg-secondary);
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: var(--shadow);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ========================================
+   Навигация
+   ======================================== */
+
+.nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.nav-item {
+  background: var(--bg-tertiary);
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+  padding: 20px;
+  text-decoration: none;
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+}
+
+.nav-item:hover {
+  border-color: var(--accent-color);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-small);
+}
+
+.nav-item h3 {
+  color: var(--accent-color);
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.nav-item p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+/* ========================================
+   Заголовки
+   ======================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--accent-color);
+  margin-top: 30px;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+h1 {
+  border-bottom: 3px solid var(--accent-color);
+  padding-bottom: 10px;
+}
+
+h2 {
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 8px;
+}
+
+/* ========================================
+   Текст
+   ======================================== */
+
+p {
+  margin: 15px 0;
+  color: var(--text-primary);
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+/* ========================================
+   Списки
+   ======================================== */
+
+ul,
+ol {
+  margin: 15px 0;
+  padding-left: 30px;
+}
+
+li {
+  margin: 5px 0;
+  color: var(--text-primary);
+}
+
+/* ========================================
+   Цитаты
+   ======================================== */
+
+blockquote {
+  border-left: 4px solid var(--quote-border);
+  margin: 20px 0;
+  padding: 10px 20px;
+  background: var(--quote-bg);
+  font-style: italic;
+  border-radius: 0 5px 5px 0;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+/* ========================================
+   Код
+   ======================================== */
+
+code {
+  background: var(--code-bg);
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: "Monaco", "Menlo", "Ubuntu Mono", monospace;
+  font-size: 0.9em;
+  color: var(--text-primary);
+  transition: background 0.3s ease;
+}
+
+pre {
+  background: var(--code-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  padding: 15px;
+  overflow-x: auto;
+  margin: 20px 0;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+}
+
+/* ========================================
+   Таблицы
+   ======================================== */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background: var(--bg-secondary);
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: var(--shadow-small);
+}
+
+th,
+td {
+  border: 1px solid var(--border-color);
+  padding: 12px;
+  text-align: left;
+  color: var(--text-primary);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+th {
+  background: var(--bg-tertiary);
+  font-weight: 600;
+  color: var(--accent-color);
+}
+
+tr:nth-child(even) {
+  background: var(--table-stripe);
+}
+
+tr:hover {
+  background: var(--bg-tertiary);
+}
+
+/* ========================================
+   Ссылка "Назад"
+   ======================================== */
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.back-link:hover {
+  color: var(--accent-color);
+}
+
+/* ========================================
+   Футер
+   ======================================== */
+
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+/* ========================================
+   Переключатель темы
+   ======================================== */
+
+.theme-switcher {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  background: var(--bg-secondary);
+  border: 2px solid var(--border-color);
+  border-radius: 25px;
+  padding: 5px;
+  box-shadow: var(--shadow-small);
+  transition: all 0.3s ease;
+}
+
+.theme-switcher:hover {
+  box-shadow: var(--shadow);
+}
+
+.theme-switcher select {
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.3s ease;
+}
+
+.theme-switcher select:hover {
+  background: var(--bg-tertiary);
+}
+
+.theme-switcher select:focus {
+  background: var(--bg-tertiary);
+}
+
+/* ========================================
+   Адаптивность
+   ======================================== */
+
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .nav {
+    grid-template-columns: 1fr;
+  }
+
+  .theme-switcher {
+    top: 10px;
+    right: 10px;
+  }
+
+  .theme-switcher select {
+    font-size: 12px;
+    padding: 3px 8px;
+  }
+}
+
+/* ========================================
+   Анимации
+   ======================================== */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.content {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* ========================================
+   Дополнительные утилиты
+   ======================================== */
+
+.highlight {
+  background: var(--accent-color);
+  color: white;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+.code {
+  font-family: "Monaco", "Menlo", "Ubuntu Mono", monospace;
+  background: var(--code-bg);
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+.link {
+  color: var(--link-color);
+  text-decoration: underline;
+}
+
+.internal-link {
+  color: var(--accent-color);
+  font-weight: 500;
+}
+
+.tooltip {
+  position: relative;
+  cursor: help;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.table-striped tr:nth-child(even) {
+  background: var(--table-stripe);
+}
+
+.line-numbers {
+  counter-reset: line;
+}
+
+.line-numbers code {
+  counter-increment: line;
+}
+
+.line-numbers code::before {
+  content: counter(line);
+  display: inline-block;
+  width: 2em;
+  margin-right: 1em;
+  text-align: right;
+  color: var(--text-muted);
+  border-right: 1px solid var(--border-color);
+  padding-right: 1em;
+  margin-right: 1em;
+}
