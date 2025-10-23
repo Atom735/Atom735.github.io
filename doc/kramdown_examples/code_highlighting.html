@@ -1,382 +1,284 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Код и подсветка синтаксиса - Flutter Marketplace App - Документация
-    </title>
-    <meta name="description"
-        content="Полная документация по разработке маркетплейс приложения на Flutter">
-
-    <!-- Jekyll SEO -->
-    <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Код и подсветка синтаксиса | Flutter Marketplace App - Документация</title>
-<meta name="generator" content="Jekyll v4.3.4" />
-<meta property="og:title" content="Код и подсветка синтаксиса" />
-<meta name="author" content="Flutter Developer" />
-<meta property="og:locale" content="ru" />
-<meta name="description" content="Полная документация по разработке маркетплейс приложения на Flutter" />
-<meta property="og:description" content="Полная документация по разработке маркетплейс приложения на Flutter" />
-<link rel="canonical" href="/doc/kramdown_examples/code_highlighting.html" />
-<meta property="og:url" content="/doc/kramdown_examples/code_highlighting.html" />
-<meta property="og:site_name" content="Flutter Marketplace App - Документация" />
-<meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Код и подсветка синтаксиса" />
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Flutter Developer"},"description":"Полная документация по разработке маркетплейс приложения на Flutter","headline":"Код и подсветка синтаксиса","url":"/doc/kramdown_examples/code_highlighting.html"}</script>
-<!-- End Jekyll SEO tag -->
-
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="/assets/css/themes.css">
+    <title>Code Highlighting</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f8f9fa;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3, h4 {
+            color: #667eea;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        h1 {
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul, ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        li {
+            margin: 5px 0;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #666;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .back-link:hover {
+            color: #667eea;
+        }
+    </style>
 </head>
-
 <body>
     <div class="container">
-        
-        <div class="header">
-            <h1>🚀 Flutter Marketplace App - Документация</h1>
-            <p>Полная документация по разработке маркетплейс приложения на Flutter</p>
-        </div>
-        
-
-        <div class="content">
-            
-            <a href="/index.html" class="back-link">← Назад к
-                главной</a>
-            
-
-            <h1 id="код-и-подсветка-синтаксиса-в-kramdown">Код и подсветка синтаксиса в Kramdown</h1>
-
-<h2 id="inline-код">Inline код</h2>
-
-<p>Это <code class="language-plaintext highlighter-rouge">inline код</code> в тексте. Можно использовать <code class="language-plaintext highlighter-rouge">переменные</code>, <code class="language-plaintext highlighter-rouge">функции</code>, <code class="language-plaintext highlighter-rouge">классы</code> и другие элементы кода прямо в тексте.</p>
-
-<h2 id="блоки-кода">Блоки кода</h2>
-
-<h3 id="простой-блок-кода">Простой блок кода</h3>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Это простой блок кода
+        <a href="../index.html" class="back-link">← Назад к главной</a>
+        <p>---
+layout: default
+title: Код и подсветка синтаксиса
+back_link: /index.html
+---</p><p><h1>Код и подсветка синтаксиса в Kramdown</h1></p><p><h2>Inline код</h2></p><p>Это `inline код` в тексте. Можно использовать `переменные`, `функции`, `классы` и другие элементы кода прямо в тексте.</p><p><h2>Блоки кода</h2></p><p><h3>Простой блок кода</h3></p><p>```
+Это простой блок кода
 без подсветки синтаксиса
-</code></pre></div></div>
-
-<h3 id="python-код">Python код</h3>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">fibonacci</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-    <span class="s">"""Вычисляет n-е число Фибоначчи"""</span>
-    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">n</span>
-    <span class="k">return</span> <span class="n">fibonacci</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">fibonacci</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span>
-
-<span class="c1"># Пример использования
-</span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"F(</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s">) = </span><span class="si">{</span><span class="n">fibonacci</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
-</code></pre></div></div>
-
-<h3 id="javascript-код">JavaScript код</h3>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Calculator</span> <span class="p">{</span>
-    <span class="kd">constructor</span><span class="p">()</span> <span class="p">{</span>
-        <span class="k">this</span><span class="p">.</span><span class="nx">history</span> <span class="o">=</span> <span class="p">[];</span>
-    <span class="p">}</span>
-
-    <span class="nx">add</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
-        <span class="kd">const</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span><span class="p">;</span>
-        <span class="k">this</span><span class="p">.</span><span class="nx">history</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s2">`</span><span class="p">${</span><span class="nx">a</span><span class="p">}</span><span class="s2"> + </span><span class="p">${</span><span class="nx">b</span><span class="p">}</span><span class="s2"> = </span><span class="p">${</span><span class="nx">result</span><span class="p">}</span><span class="s2">`</span><span class="p">);</span>
-        <span class="k">return</span> <span class="nx">result</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="nx">getHistory</span><span class="p">()</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">history</span><span class="p">;</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-
-<span class="kd">const</span> <span class="nx">calc</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Calculator</span><span class="p">();</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">calc</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">));</span> <span class="c1">// 8</span>
-</code></pre></div></div>
-
-<h3 id="dart-код-flutter">Dart код (Flutter)</h3>
-
-<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="s">'package:flutter/material.dart'</span><span class="o">;</span>
-
-<span class="kd">class</span> <span class="nc">MyWidget</span> <span class="kd">extends</span> <span class="n">StatelessWidget</span> <span class="p">{</span>
-  <span class="kd">final</span> <span class="kt">String</span> <span class="n">title</span><span class="p">;</span>
-  <span class="kd">final</span> <span class="n">VoidCallback</span><span class="o">?</span> <span class="n">onTap</span><span class="p">;</span>
-
-  <span class="kd">const</span> <span class="n">MyWidget</span><span class="p">({</span>
-    <span class="n">Key</span><span class="o">?</span> <span class="n">key</span><span class="p">,</span>
-    <span class="kd">required</span> <span class="k">this</span><span class="o">.</span><span class="na">title</span><span class="p">,</span>
-    <span class="k">this</span><span class="o">.</span><span class="na">onTap</span><span class="p">,</span>
-  <span class="p">})</span> <span class="o">:</span> <span class="k">super</span><span class="p">(</span><span class="nl">key:</span> <span class="n">key</span><span class="p">);</span>
-
-  <span class="nd">@override</span>
-  <span class="n">Widget</span> <span class="n">build</span><span class="p">(</span><span class="n">BuildContext</span> <span class="n">context</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="n">GestureDetector</span><span class="p">(</span>
-      <span class="nl">onTap:</span> <span class="n">onTap</span><span class="p">,</span>
-      <span class="nl">child:</span> <span class="n">Container</span><span class="p">(</span>
-        <span class="nl">padding:</span> <span class="kd">const</span> <span class="n">EdgeInsets</span><span class="o">.</span><span class="na">all</span><span class="p">(</span><span class="mi">16</span><span class="p">),</span>
-        <span class="nl">decoration:</span> <span class="n">BoxDecoration</span><span class="p">(</span>
-          <span class="nl">color:</span> <span class="n">Colors</span><span class="o">.</span><span class="na">blue</span><span class="p">,</span>
-          <span class="nl">borderRadius:</span> <span class="n">BorderRadius</span><span class="o">.</span><span class="na">circular</span><span class="p">(</span><span class="mi">8</span><span class="p">),</span>
-        <span class="p">),</span>
-        <span class="nl">child:</span> <span class="n">Text</span><span class="p">(</span>
-          <span class="n">title</span><span class="p">,</span>
-          <span class="nl">style:</span> <span class="kd">const</span> <span class="n">TextStyle</span><span class="p">(</span>
-            <span class="nl">color:</span> <span class="n">Colors</span><span class="o">.</span><span class="na">white</span><span class="p">,</span>
-            <span class="nl">fontSize:</span> <span class="mi">16</span><span class="p">,</span>
-            <span class="nl">fontWeight:</span> <span class="n">FontWeight</span><span class="o">.</span><span class="na">bold</span><span class="p">,</span>
-          <span class="p">),</span>
-        <span class="p">),</span>
-      <span class="p">),</span>
-    <span class="p">);</span>
-  <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<h3 id="html-код">HTML код</h3>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"ru"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;head&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1.0"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;title&gt;</span>Kramdown Examples<span class="nt">&lt;/title&gt;</span>
-    <span class="nt">&lt;style&gt;</span>
-        <span class="nc">.highlight</span> <span class="p">{</span>
-            <span class="nl">background-color</span><span class="p">:</span> <span class="m">#f8f9fa</span><span class="p">;</span>
-            <span class="nl">padding</span><span class="p">:</span> <span class="m">2px</span> <span class="m">4px</span><span class="p">;</span>
-            <span class="nl">border-radius</span><span class="p">:</span> <span class="m">3px</span><span class="p">;</span>
-        <span class="p">}</span>
-    <span class="nt">&lt;/style&gt;</span>
-<span class="nt">&lt;/head&gt;</span>
-<span class="nt">&lt;body&gt;</span>
-    <span class="nt">&lt;h1&gt;</span>Привет, Kramdown!<span class="nt">&lt;/h1&gt;</span>
-    <span class="nt">&lt;p&gt;</span>Это пример <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"highlight"</span><span class="nt">&gt;</span>HTML кода<span class="nt">&lt;/span&gt;</span>.<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
-</code></pre></div></div>
-
-<h3 id="css-код">CSS код</h3>
-
-<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* Основные стили */</span>
-<span class="nd">:root</span> <span class="p">{</span>
-    <span class="py">--primary-color</span><span class="p">:</span> <span class="m">#667eea</span><span class="p">;</span>
-    <span class="py">--secondary-color</span><span class="p">:</span> <span class="m">#764ba2</span><span class="p">;</span>
-    <span class="py">--text-color</span><span class="p">:</span> <span class="m">#333</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="nt">body</span> <span class="p">{</span>
-    <span class="nl">font-family</span><span class="p">:</span> <span class="n">-apple-system</span><span class="p">,</span> <span class="n">BlinkMacSystemFont</span><span class="p">,</span> <span class="s2">'Segoe UI'</span><span class="p">,</span> <span class="n">Roboto</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
-    <span class="nl">line-height</span><span class="p">:</span> <span class="m">1.6</span><span class="p">;</span>
-    <span class="nl">color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--text-color</span><span class="p">);</span>
-    <span class="nl">background</span><span class="p">:</span> <span class="n">linear-gradient</span><span class="p">(</span><span class="m">135deg</span><span class="p">,</span> <span class="n">var</span><span class="p">(</span><span class="n">--primary-color</span><span class="p">)</span> <span class="m">0%</span><span class="p">,</span> <span class="n">var</span><span class="p">(</span><span class="n">--secondary-color</span><span class="p">)</span> <span class="m">100%</span><span class="p">);</span>
-<span class="p">}</span>
-
-<span class="nc">.container</span> <span class="p">{</span>
-    <span class="nl">max-width</span><span class="p">:</span> <span class="m">1200px</span><span class="p">;</span>
-    <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span> <span class="nb">auto</span><span class="p">;</span>
-    <span class="nl">padding</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="c">/* Адаптивность */</span>
-<span class="k">@media</span> <span class="p">(</span><span class="n">max-width</span><span class="p">:</span> <span class="m">768px</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nc">.container</span> <span class="p">{</span>
-        <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<h3 id="sql-код">SQL код</h3>
-
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">-- Создание таблицы пользователей</span>
-<span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">users</span> <span class="p">(</span>
-    <span class="n">id</span> <span class="nb">INT</span> <span class="k">PRIMARY</span> <span class="k">KEY</span> <span class="n">AUTO_INCREMENT</span><span class="p">,</span>
-    <span class="n">username</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span> <span class="k">UNIQUE</span><span class="p">,</span>
-    <span class="n">email</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span> <span class="k">UNIQUE</span><span class="p">,</span>
-    <span class="n">password_hash</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
-    <span class="n">created_at</span> <span class="nb">TIMESTAMP</span> <span class="k">DEFAULT</span> <span class="k">CURRENT_TIMESTAMP</span><span class="p">,</span>
-    <span class="n">updated_at</span> <span class="nb">TIMESTAMP</span> <span class="k">DEFAULT</span> <span class="k">CURRENT_TIMESTAMP</span> <span class="k">ON</span> <span class="k">UPDATE</span> <span class="k">CURRENT_TIMESTAMP</span>
-<span class="p">);</span>
-
-<span class="c1">-- Вставка данных</span>
-<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">users</span> <span class="p">(</span><span class="n">username</span><span class="p">,</span> <span class="n">email</span><span class="p">,</span> <span class="n">password_hash</span><span class="p">)</span>
-<span class="k">VALUES</span>
-    <span class="p">(</span><span class="s1">'john_doe'</span><span class="p">,</span> <span class="s1">'john@example.com'</span><span class="p">,</span> <span class="s1">'$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewdBPj4J/4QZqK2'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'jane_smith'</span><span class="p">,</span> <span class="s1">'jane@example.com'</span><span class="p">,</span> <span class="s1">'$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewdBPj4J/4QZqK2'</span><span class="p">);</span>
-
-<span class="c1">-- Запрос с JOIN</span>
-<span class="k">SELECT</span>
-    <span class="n">u</span><span class="p">.</span><span class="n">username</span><span class="p">,</span>
-    <span class="n">u</span><span class="p">.</span><span class="n">email</span><span class="p">,</span>
-    <span class="n">p</span><span class="p">.</span><span class="n">title</span> <span class="k">as</span> <span class="n">post_title</span><span class="p">,</span>
-    <span class="n">p</span><span class="p">.</span><span class="n">created_at</span> <span class="k">as</span> <span class="n">post_date</span>
-<span class="k">FROM</span> <span class="n">users</span> <span class="n">u</span>
-<span class="k">LEFT</span> <span class="k">JOIN</span> <span class="n">posts</span> <span class="n">p</span> <span class="k">ON</span> <span class="n">u</span><span class="p">.</span><span class="n">id</span> <span class="o">=</span> <span class="n">p</span><span class="p">.</span><span class="n">user_id</span>
-<span class="k">WHERE</span> <span class="n">u</span><span class="p">.</span><span class="n">created_at</span> <span class="o">&gt;=</span> <span class="s1">'2024-01-01'</span>
-<span class="k">ORDER</span> <span class="k">BY</span> <span class="n">p</span><span class="p">.</span><span class="n">created_at</span> <span class="k">DESC</span><span class="p">;</span>
-</code></pre></div></div>
-
-<h3 id="yaml-код">YAML код</h3>
-
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Jekyll конфигурация</span>
-<span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Flutter</span><span class="nv"> </span><span class="s">Marketplace</span><span class="nv"> </span><span class="s">App"</span>
-<span class="na">description</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Документация</span><span class="nv"> </span><span class="s">по</span><span class="nv"> </span><span class="s">разработке</span><span class="nv"> </span><span class="s">маркетплейс</span><span class="nv"> </span><span class="s">приложения"</span>
-<span class="na">baseurl</span><span class="pi">:</span> <span class="s2">"</span><span class="s">"</span>
-<span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">"</span>
-
-<span class="c1"># Markdown настройки</span>
-<span class="na">markdown</span><span class="pi">:</span> <span class="s">kramdown</span>
-<span class="na">kramdown</span><span class="pi">:</span>
-  <span class="na">input</span><span class="pi">:</span> <span class="s">GFM</span>
-  <span class="na">syntax_highlighter</span><span class="pi">:</span> <span class="s">rouge</span>
-  <span class="na">auto_ids</span><span class="pi">:</span> <span class="no">true</span>
-  <span class="na">toc_levels</span><span class="pi">:</span> <span class="s">1..3</span>
-
-<span class="c1"># Плагины</span>
-<span class="na">plugins</span><span class="pi">:</span>
-  <span class="pi">-</span> <span class="s">jekyll-feed</span>
-  <span class="pi">-</span> <span class="s">jekyll-seo-tag</span>
-  <span class="pi">-</span> <span class="s">jekyll-sitemap</span>
-
-<span class="c1"># Настройки по умолчанию</span>
-<span class="na">defaults</span><span class="pi">:</span>
-  <span class="pi">-</span> <span class="na">scope</span><span class="pi">:</span>
-      <span class="na">path</span><span class="pi">:</span> <span class="s2">"</span><span class="s">"</span>
-    <span class="na">values</span><span class="pi">:</span>
-      <span class="na">layout</span><span class="pi">:</span> <span class="s2">"</span><span class="s">default"</span>
-      <span class="na">lang</span><span class="pi">:</span> <span class="s2">"</span><span class="s">ru"</span>
-</code></pre></div></div>
-
-<h3 id="json-код">JSON код</h3>
-
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"flutter-marketplace-app"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.0.0"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Маркетплейс приложение на Flutter"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"main"</span><span class="p">:</span><span class="w"> </span><span class="s2">"lib/main.dart"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"dependencies"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"flutter"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^3.0.0"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"http"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^0.13.0"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"provider"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^6.0.0"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"shared_preferences"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^2.0.0"</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="nl">"dev_dependencies"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"flutter_test"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^3.0.0"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"flutter_lints"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^2.0.0"</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="nl">"scripts"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"test"</span><span class="p">:</span><span class="w"> </span><span class="s2">"flutter test"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"build"</span><span class="p">:</span><span class="w"> </span><span class="s2">"flutter build apk"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"analyze"</span><span class="p">:</span><span class="w"> </span><span class="s2">"flutter analyze"</span><span class="w">
-  </span><span class="p">}</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div></div>
-
-<h2 id="код-с-атрибутами">Код с атрибутами</h2>
-
-<h3 id="код-с-номерами-строк">Код с номерами строк</h3>
-
-<div class="language-python line-numbers highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">quick_sort</span><span class="p">(</span><span class="n">arr</span><span class="p">):</span>
-    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">arr</span>
-    <span class="n">pivot</span> <span class="o">=</span> <span class="n">arr</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span><span class="p">]</span>
-    <span class="n">left</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">arr</span> <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="n">pivot</span><span class="p">]</span>
-    <span class="n">middle</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">arr</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="n">pivot</span><span class="p">]</span>
-    <span class="n">right</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">arr</span> <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="n">pivot</span><span class="p">]</span>
-    <span class="k">return</span> <span class="n">quick_sort</span><span class="p">(</span><span class="n">left</span><span class="p">)</span> <span class="o">+</span> <span class="n">middle</span> <span class="o">+</span> <span class="n">quick_sort</span><span class="p">(</span><span class="n">right</span><span class="p">)</span>
-</code></pre></div></div>
-
-<h3 id="код-с-подсветкой-строк">Код с подсветкой строк</h3>
-
-<div class="language-python line-numbers highlight-lines=&quot;2,4&quot; highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">fibonacci</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">n</span>
-    <span class="k">return</span> <span class="n">fibonacci</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">fibonacci</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span>
-</code></pre></div></div>
-
-<h2 id="командная-строка">Командная строка</h2>
-
-<h3 id="bash-команды">Bash команды</h3>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Клонирование репозитория</span>
+```</p><p><h3>Python код</h3></p><p>```python
+def fibonacci(n):
+    """Вычисляет n-е число Фибоначчи"""
+    if n <= 1:
+        return n
+    return fibonacci(n-1) + fibonacci(n-2)</p><p><h1>Пример использования</h1>
+for i in range(10):
+    print(f"F({i}) = {fibonacci(i)}")
+```</p><p><h3>JavaScript код</h3></p><p>```javascript
+class Calculator {
+    constructor() {
+        this.history = [];
+    }</p><p>    add(a, b) {
+        const result = a + b;
+        this.history.push(`${a} + ${b} = ${result}`);
+        return result;
+    }</p><p>    getHistory() {
+        return this.history;
+    }
+}</p><p>const calc = new Calculator();
+console.log(calc.add(5, 3)); // 8
+```</p><p><h3>Dart код (Flutter)</h3></p><p>```dart
+import 'package:flutter/material.dart';</p><p>class MyWidget extends StatelessWidget {
+  final String title;
+  final VoidCallback? onTap;</p><p>  const MyWidget({
+    Key? key,
+    required this.title,
+    this.onTap,
+  }) : super(key: key);</p><p>  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        padding: const EdgeInsets.all(16),
+        decoration: BoxDecoration(
+          color: Colors.blue,
+          borderRadius: BorderRadius.circular(8),
+        ),
+        child: Text(
+          title,
+          style: const TextStyle(
+            color: Colors.white,
+            fontSize: 16,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+      ),
+    );
+  }
+}
+```</p><p><h3>HTML код</h3></p><p>```html
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kramdown Examples</title>
+    <style>
+        .highlight {
+            background-color: #f8f9fa;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Привет, Kramdown!</h1>
+    <p>Это пример <span class="highlight">HTML кода</span>.</p>
+</body>
+</html>
+```</p><p><h3>CSS код</h3></p><p>```css
+/<em> Основные стили </em>/
+:root {
+    --primary-color: #667eea;
+    --secondary-color: #764ba2;
+    --text-color: #333;
+}</p><p>body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+}</p><p>.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}</p><p>/<em> Адаптивность </em>/
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+}
+```</p><p><h3>SQL код</h3></p><p>```sql
+-- Создание таблицы пользователей
+CREATE TABLE users (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    password_hash VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);</p><p>-- Вставка данных
+INSERT INTO users (username, email, password_hash)
+VALUES
+    ('john_doe', 'john@example.com', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewdBPj4J/4QZqK2'),
+    ('jane_smith', 'jane@example.com', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewdBPj4J/4QZqK2');</p><p>-- Запрос с JOIN
+SELECT
+    u.username,
+    u.email,
+    p.title as post_title,
+    p.created_at as post_date
+FROM users u
+LEFT JOIN posts p ON u.id = p.user_id
+WHERE u.created_at >= '2024-01-01'
+ORDER BY p.created_at DESC;
+```</p><p><h3>YAML код</h3></p><p>```yaml
+<h1>Jekyll конфигурация</h1>
+title: "Flutter Marketplace App"
+description: "Документация по разработке маркетплейс приложения"
+baseurl: ""
+url: ""</p><p><h1>Markdown настройки</h1>
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  auto_ids: true
+  toc_levels: 1..3</p><p><h1>Плагины</h1>
+plugins:
+<ul>
+  <li>jekyll-feed</li>
+  <li>jekyll-seo-tag</li>
+  <li>jekyll-sitemap</li>
+</ul></p><p><h1>Настройки по умолчанию</h1>
+defaults:
+<ul>
+  <li>scope:</li>
+</ul>
+      path: ""
+    values:
+      layout: "default"
+      lang: "ru"
+```</p><p><h3>JSON код</h3></p><p>```json
+{
+  "name": "flutter-marketplace-app",
+  "version": "1.0.0",
+  "description": "Маркетплейс приложение на Flutter",
+  "main": "lib/main.dart",
+  "dependencies": {
+    "flutter": "^3.0.0",
+    "http": "^0.13.0",
+    "provider": "^6.0.0",
+    "shared_preferences": "^2.0.0"
+  },
+  "dev_dependencies": {
+    "flutter_test": "^3.0.0",
+    "flutter_lints": "^2.0.0"
+  },
+  "scripts": {
+    "test": "flutter test",
+    "build": "flutter build apk",
+    "analyze": "flutter analyze"
+  }
+}
+```</p><p><h2>Код с атрибутами</h2></p><p><h3>Код с номерами строк</h3></p><p>```python
+def quick_sort(arr):
+    if len(arr) <= 1:
+        return arr
+    pivot = arr[len(arr) // 2]
+    left = [x for x in arr if x < pivot]
+    middle = [x for x in arr if x == pivot]
+    right = [x for x in arr if x > pivot]
+    return quick_sort(left) + middle + quick_sort(right)
+```
+{:.line-numbers}</p><p><h3>Код с подсветкой строк</h3></p><p>```python
+def fibonacci(n):
+    if n <= 1:
+        return n
+    return fibonacci(n-1) + fibonacci(n-2)
+```
+{:.line-numbers .highlight-lines="2,4"}</p><p><h2>Командная строка</h2></p><p><h3>Bash команды</h3></p><p>```bash
+<h1>Клонирование репозитория</h1>
 git clone https://github.com/user/repo.git
-<span class="nb">cd </span>repo
-
-<span class="c"># Установка зависимостей</span>
-bundle <span class="nb">install</span>
-
-<span class="c"># Запуск Jekyll</span>
-bundle <span class="nb">exec </span>jekyll serve
-
-<span class="c"># Сборка сайта</span>
-bundle <span class="nb">exec </span>jekyll build
-</code></pre></div></div>
-
-<h3 id="powershell-команды">PowerShell команды</h3>
-
-<div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Создание нового проекта Flutter</span><span class="w">
-</span><span class="n">flutter</span><span class="w"> </span><span class="nx">create</span><span class="w"> </span><span class="nx">my_app</span><span class="w">
-</span><span class="n">cd</span><span class="w"> </span><span class="nx">my_app</span><span class="w">
-
-</span><span class="c"># Запуск приложения</span><span class="w">
-</span><span class="n">flutter</span><span class="w"> </span><span class="nx">run</span><span class="w">
-
-</span><span class="c"># Сборка APK</span><span class="w">
-</span><span class="n">flutter</span><span class="w"> </span><span class="nx">build</span><span class="w"> </span><span class="nx">apk</span><span class="w"> </span><span class="nt">--release</span><span class="w">
-</span></code></pre></div></div>
-
-<h2 id="конфигурационные-файлы">Конфигурационные файлы</h2>
-
-<h3 id="dockerfile">Dockerfile</h3>
-
-<div class="language-dockerfile highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">FROM</span><span class="s"> ruby:3.1-alpine</span>
-
-<span class="k">WORKDIR</span><span class="s"> /app</span>
-
-<span class="k">COPY</span><span class="s"> Gemfile Gemfile.lock ./</span>
-<span class="k">RUN </span>bundle <span class="nb">install</span>
-
-<span class="k">COPY</span><span class="s"> . .</span>
-
-<span class="k">EXPOSE</span><span class="s"> 4000</span>
-
-<span class="k">CMD</span><span class="s"> ["bundle", "exec", "jekyll", "serve", "--host", "0.0.0.0"]</span>
-</code></pre></div></div>
-
-<h3 id="gitignore">.gitignore</h3>
-
-<pre><code class="language-gitignore"># Jekyll
+cd repo</p><p><h1>Установка зависимостей</h1>
+bundle install</p><p><h1>Запуск Jekyll</h1>
+bundle exec jekyll serve</p><p><h1>Сборка сайта</h1>
+bundle exec jekyll build
+```</p><p><h3>PowerShell команды</h3></p><p>```powershell
+<h1>Создание нового проекта Flutter</h1>
+flutter create my_app
+cd my_app</p><p><h1>Запуск приложения</h1>
+flutter run</p><p><h1>Сборка APK</h1>
+flutter build apk --release
+```</p><p><h2>Конфигурационные файлы</h2></p><p><h3>Dockerfile</h3></p><p>```dockerfile
+FROM ruby:3.1-alpine</p><p>WORKDIR /app</p><p>COPY Gemfile Gemfile.lock ./
+RUN bundle install</p><p>COPY . .</p><p>EXPOSE 4000</p><p>CMD ["bundle", "exec", "jekyll", "serve", "--host", "0.0.0.0"]
+```</p><p><h3>.gitignore</h3></p><p>```gitignore
+<h1>Jekyll</h1>
 _site/
 .sass-cache/
 .jekyll-cache/
-.jekyll-metadata
-
-# Flutter
+.jekyll-metadata</p><p><h1>Flutter</h1>
 build/
 .dart_tool/
 .packages
 .pub-cache/
 .pub/
-pubspec.lock
-
-# IDE
+pubspec.lock</p><p><h1>IDE</h1>
 .vscode/
 .idea/
 *.swp
-*.swo
-
-# OS
+*.swo</p><p><h1>OS</h1>
 .DS_Store
 Thumbs.db
-</code></pre>
-
-        </div>
+```
+</p>
     </div>
-
-    <!-- JavaScript -->
-    <script src="/assets/js/theme-switcher.js"></script>
 </body>
-
 </html>
