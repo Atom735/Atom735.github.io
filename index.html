@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head><!-- Test comment -->
+    <meta charset="UTF-8"><!-- Test comment -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flutter Marketplace App - Документация</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .content {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .nav-item {
+            background: #f8f9fa;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            padding: 20px;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s ease;
+        }
+
+        .nav-item:hover {
+            border-color: #667eea;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-item h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+
+        .nav-item p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 2rem;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .file-list {
+            list-style: none;
+        }
+
+        .file-list li {
+            margin-bottom: 10px;
+        }
+
+        .file-list a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 12px;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .file-list a:hover {
+            background-color: #f0f2ff;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e9ecef;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .nav {
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 Flutter Marketplace App</h1>
+            <p>Документация по разработке маркетплейс приложения</p>
+        </div>
+
+        <div class="content">
+            <div class="nav">
+                <a href="#architecture" class="nav-item">
+                    <h3>🏗️ Архитектура</h3>
+                    <p>Анализ архитектурных решений для Flutter приложения</p>
+                </a>
+                <a href="#features" class="nav-item">
+                    <h3>⚡ Функции приложения</h3>
+                    <p>Обзор основных экранов и пользовательских сценариев</p>
+                </a>
+                <a href="#b2b" class="nav-item">
+                    <h3>🏢 B2B и CRM</h3>
+                    <p>Функции для бизнеса, продавцов и администраторов</p>
+                </a>
+            </div>
+
+            <div class="section" id="architecture">
+                <h2>🏗️ Архитектура</h2>
+                <ul class="file-list">
+                    <li><a href="doc/archs/flutter_architectures_analysis.html">Анализ
+                            архитектур Flutter</a></li>
+                </ul>
+            </div>
+
+            <div class="section" id="features">
+                <h2>⚡ Функции приложения</h2>
+                <ul class="file-list">
+                    <li><a href="doc/sketches/app_features_overview.html">Обзор
+                            функций приложения</a></li>
+                    <li><a href="doc/sketches/user_flows.html">Пользовательские
+                            сценарии</a></li>
+                </ul>
+            </div>
+
+            <div class="section" id="b2b">
+                <h2>🏢 B2B и CRM</h2>
+                <ul class="file-list">
+                    <li><a href="doc/b2b_features/admin_panel_features.html">Функции
+                            админ-панели</a></li>
+                    <li><a href="doc/b2b_features/crm_overview.html">Обзор CRM
+                            системы</a></li>
+                    <li><a href="doc/b2b_features/seller_portal_features.html">Функции
+                            портала продавцов</a></li>
+                </ul>
+            </div>
+
+            <div class="footer">
+                <p>📚 Документация автоматически обновляется при изменениях в
+                    репозитории</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
